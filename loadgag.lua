@@ -127,9 +127,9 @@ getgenv().ConfigsKaitun = {
 	},
 
 	Webhook = {
-		UrlPet = "Url Here",
-		UrlSeed = "Url Here",
-		PcName = "Threadripper pro 7995wx",
+		UrlPet = "",
+		UrlSeed = "",
+		PcName = "",
 		
 		Noti = {
 			Seeds = {
