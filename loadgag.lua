@@ -48,15 +48,25 @@ getgenv().ConfigsKaitun = {
 			
 		}
 	},
-	
+
 	Events = {
+		Dino = true,
+		
+		["Traveling Shop"] = {
+			"Bald Eagle",
+			"Night Staff",
+			"Star Caller"
+		},
+		
 		["Summer Harvest"] = {
 			["Do At Money"] = 1000000,
 			["Point Limit"] = 15000,
 		},
 		Craft = {
-			"Crafters Seed Pack",
-			"Anti Bee Egg"
+			"Ancient Seed Pack",
+			
+			"Lightning Rod",
+			"Anti Bee Egg",
 		},
 		Shop = {
 			--"Traveler's Fruit",
@@ -67,12 +77,14 @@ getgenv().ConfigsKaitun = {
 			"Lily of the Valley",
 		}
 	},
-	
+
 	Gear = {
 		Buy = { 
 			"Master Sprinkler",
-			"",
-			""
+			"Basic Sprinkler",
+			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Lightning Rod",
 		},
 		Lock = {
 
@@ -81,56 +93,68 @@ getgenv().ConfigsKaitun = {
 
 	Eggs = {
 		Place = {
+			"Dinosaur Egg",
+			"Oasis Egg",
 			"Anti Bee Egg",
 			"Paradise Egg",
 			"Night Egg",
 			"Bug Egg",
 			"Mythical Egg",
-			"Uncommon Egg"
+			"Rare Egg",
+			"Rare Summer Egg",
 		},
 		Buy = {
+			"Anti Bee Egg",
 			"Paradise Egg",
+			"Bee Egg",
 			"Night Egg",
 			"Bug Egg",
 			"Mythical Egg",
-			"Uncommon Egg"
+			"Rare Egg",
+			"Rare Summer Egg",
 		}
 	},
-	
+
 	Pets = {
 		["Upgrade Slot"] = {
 			["Pet"] = {
-				
+				"Starfish",
 			},
 			["Limit Upgrade"] = 1,
 			["Equip When Done"] = {
 				"Blood Kiwi",
-				"Chicken"
+				"Rooster",
+				"Seal",
 			},
 		},
 		Locked = {
+			"T-Rex",
+			"Dragonfly",
+			"Night Owl",
+			"Queen Bee",
+			"Raccoon",
+			"Disco Bee",
+			"Fennec Fox",
 			"Disco Bee",
 			"Butterfly",
 			"Mimic Octopus",
-			"Peacock",
-			"Scarlet Macaw",
-			"Moth",
-			"Brown Mouse",
 			"Queen Bee",
-			"Dragonfly",
-			"Raccoon",
 			"Red Fox",
 			"Blood Owl",
 			"Blood Kiwi",
-			["Chicken"] = 5,
+			["Rooster"] = 5,
+		},
+		LockPet_Weight = 10, -- if Weight >= 10 they will locked,
+		Instant_Sell = {
+			"Dog",
 		}
 	},
 
 	Webhook = {
 		UrlPet = "",
 		UrlSeed = "",
-		PcName = "",
-		
+		PcName = "PC",
+
 		Noti = {
 			Seeds = {
 				"Sunflower",
@@ -138,21 +162,21 @@ getgenv().ConfigsKaitun = {
 				"Elephant Ears",
 			},
 			SeedPack = {
-				"Idk"
+				"Idk",
 			},
 			Pets = {
+				"Dragonfly",
+				"Night Owl",
+				"Queen Bee",
+				"Raccoon",
+				"Disco Bee",
+				"Fennec Fox",
 				"Disco Bee",
 				"Butterfly",
 				"Mimic Octopus",
-				"Peacock",
-				"Scarlet Macaw",
-				"Moth",
-				"Brown Mouse",
-				"Queen Bee",
-				"Dragonfly",
-				"Raccoon",
 				"Red Fox",
 			},
+			Pet_Weight_Noti = true,
 		}
 	},
 }
